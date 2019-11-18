@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<script>
+    'use strict';
+    let age = prompt("what was your age", '');
+    let welcome;
+    if (age > 18) {
+        welcome = function() {
+            alert("vote ");
+        };
+    } else if (age > 65 || age == 65) {
+        welcome = function() {
+            alert("senior citizen");
+        };
+    } else {
+        alert("not eligible vote")
+    }
+    welcome();
+</script>
