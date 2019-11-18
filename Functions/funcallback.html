@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<script>
+    'use strict';
+function ask(question, yes,no){
+    if(confirm(question)) yes()
+    else no();
+}
+function show(){
+    alert("you agree");
+}
+function showCancel(){
+    alert("you cancelled the execution");
+}
+ask("dou you agree",show,showCancel);
+
+</script>
